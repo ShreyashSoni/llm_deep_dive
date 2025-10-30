@@ -1,1 +1,10 @@
+# LLM Deep-dive
 A repo for the code of my LLM deep-dive
+
+## Repository structure
+1. #### Tokens and Embeddings
+
+## Code files
+1. #### Tokens and Embeddings
+  - **01_text2numbers.ipynb:** Text can be split into words via spaces, although this is not done in real tokenization. Encoder and decoder functions are simple look-up tables. Tokenization (encoding text using integers) is conceptually straightforward.
+  - **02_make_a_tokenizer.ipynb:** Encoders and decoders are created using dictionary comprehension and functions. The “context” of a token is its neighbors (before and possibly after); “context window” is the number of neighbors. "One-hot encoding” is a sparse tokenization, with one row per token and one column per vocab item.
