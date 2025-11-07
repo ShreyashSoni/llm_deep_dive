@@ -13,3 +13,4 @@ A repo for the code of my LLM deep-dive
    - **05_byte_pair_encoding.ipynb:** The BPE algorithm is based on replacing frequent token sequences with new tokens. The basic BPE algorithm is simple and easy to implement. Production-level tokenizers add several more steps to ensure accuracy, efficiency, and speed.
    - **06_bpe_loop.ipynb:** Even simple byte-pair encoding on a tiny datset creates tokens with preceeding spaces, just like professional tokenizers.
    - **07_gpt4_tokenizer.ipynb:** OpenAI’s tokenizer is available, but is model-specific (e.g., GPT2 vs. GPT4). Tokenizers use character- subword- and word-level tokens. Preceding spaces are part of tokens. No text preprocessing is necessary! Just feed all the text into the tokenizer.
+   - **08_token_efficiency.ipynb:** Words and tokens differ in several ways, though they can overlap. Words vary in their encoding efficiency, which is partly related to how often they appear in texts.
