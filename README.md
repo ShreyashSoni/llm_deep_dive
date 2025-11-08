@@ -14,3 +14,4 @@ A repo for the code of my LLM deep-dive
    - **06_bpe_loop.ipynb:** Even simple byte-pair encoding on a tiny datset creates tokens with preceeding spaces, just like professional tokenizers.
    - **07_gpt4_tokenizer.ipynb:** OpenAI’s tokenizer is available, but is model-specific (e.g., GPT2 vs. GPT4). Tokenizers use character- subword- and word-level tokens. Preceding spaces are part of tokens. No text preprocessing is necessary! Just feed all the text into the tokenizer.
    - **08_token_efficiency.ipynb:** Words and tokens differ in several ways, though they can overlap. Words vary in their encoding efficiency, which is partly related to how often they appear in texts.
+   - **09_strawberry.ipynb:** ChatGPT has difficulties with letter-based calculations because it represents words as tokens. Asking ChatGPT to implement its calculations in python increases accuracy (same for math problems).
