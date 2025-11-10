@@ -16,3 +16,4 @@ A repo for the code of my LLM deep-dive
    - **08_token_efficiency.ipynb:** Words and tokens differ in several ways, though they can overlap. Words vary in their encoding efficiency, which is partly related to how often they appear in texts.
    - **09_strawberry.ipynb:** ChatGPT has difficulties with letter-based calculations because it represents words as tokens. Asking ChatGPT to implement its calculations in python increases accuracy (same for math problems).
    - **10_BERT.ipynb:** Different tokenizers are optimized for different purposes. BERT tokenizer has more words (vs. subwords) than GPT, and is therefore more human-interpretable. BERT tokenizer by default adds special tokens before and after text. Don’t forget about this!
+   - **11_token_translation.ipynb:** Write your code for one specific tokenizer. Choose the tokenizer (and LLM!) based on your goals.
