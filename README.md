@@ -2,10 +2,11 @@
 A repo for the code of my LLM deep-dive
 
 ## Repository structure
-1. #### Tokens and Embeddings
+1. #### Tokens and Embeddings (Tokenization)
+2. #### Tokens and Embeddings (Embeddings)
 
 ## Code files
-1. #### Tokens and Embeddings
+1. #### Tokens and Embeddings (Tokenization)
    - **01_text2numbers.ipynb:** Text can be split into words via spaces, although this is not done in real tokenization. Encoder and decoder functions are simple look-up tables. Tokenization (encoding text using integers) is conceptually straightforward.
    - **02_make_a_tokenizer.ipynb:** Encoders and decoders are created using dictionary comprehension and functions. The “context” of a token is its neighbors (before and possibly after); “context window” is the number of neighbors. "One-hot encoding” is a sparse tokenization, with one row per token and one column per vocab item.
    - **03_preparing_text_for_tokens.ipynb:** Real text from the web is easy to import but a pain to clean. Creating a tokenizing scheme is tricky and involves many choices with few clear optimal decisions Encoders and decoders are easy to create and use.
@@ -20,3 +21,6 @@ A repo for the code of my LLM deep-dive
    - **12_token_compression.ipynb:** Importing text data from the web is really easy. Tokenization = compression? The primary goal of a tokenizer is to make text more efficient for LMs, but compression is a common byproduct due to redundancies in (some) written languages. Token compression ratios are stable across different texts, with higher variability for text that includes code.
    - **13_zipfs_law.ipynb:** Zipf’s law, a.k.a. power-law scaling, a.k.a. scale-free organization, a.k.a. fractal-like, a.k.a. self-similarity is a pervasive characteristic of biological and physical systems, and is taken as evidence of complex systems. Modern computing tools and accessible digitized datasets allow you to explore nature in ways that were unthinkable until very recently.
    - **14_claude_variations.ipynb:** Spaces are meaningful to humans, but are treated just like any other character to tokenizers. Lots of subwords and words have preceding spaces. Language models need a huge amount of data to learn all the ambiguities, errors, and varieties in human text.
+
+2. #### Tokens and Embeddings (Embeddings)
+   - **01_GloVe.ipynb:** The GloVe embeddings can be used to study texts and relations between words. The embeddings vectors are fixed once trained. GloVe is not used in LLMs, partly because of the large and word-based vocabularies.
