@@ -25,3 +25,4 @@ A repo for the code of my LLM deep-dive
 2. #### Tokens and Embeddings (Embeddings)
    - **01_GloVe.ipynb:** The GloVe embeddings can be used to study texts and relations between words. The embeddings vectors are fixed once trained. GloVe is not used in LLMs, partly because of the large and word-based vocabularies.
    - **02_wiki_vs_twitter.ipynb:** A lot of diversity across word embeddings matrices. It is difficult or impossible to compare different embeddings matrices directly, but sets of relationships can be compared (see RSA in next section!). Visualizing embeddings vectors often helps with interpretation.
+   - **03_gpt2_bert_embed.ipynb:** All model parameters of publicly available LLMs are easily accessible. GPT2 and BERT embeddings are not directly comparable, though model comparisons are possible (see next section). LLM embeddings are not fixed! They are adjusted by attention and MLP layer as they pass through the LM.
