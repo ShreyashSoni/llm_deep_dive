@@ -4,6 +4,7 @@ A repo for the code of my LLM deep-dive
 ## Repository structure
 1. #### Tokens and Embeddings (Tokenization)
 2. #### Tokens and Embeddings (Embeddings)
+3. #### LLMs - Building
 
 ## Code files
 1. #### Tokens and Embeddings (Tokenization)
@@ -34,3 +35,6 @@ A repo for the code of my LLM deep-dive
    - **09_position_explorations.ipynb:** The position embeddings matrix is complicated and impacts token processing in ways that are difficult to predict a priori. Visual appearances (especially of apparent null effects) should be statistically evaluated using shuffled data before making strong interpretations. The shuffling method here was too liberal; circular shifting and spectral phase scrambling are better.
    - **10_learn_embeddings.ipynb:** Preparing data to train models can become complicated (a common experience in many data fields). Simpler data organization methods are possible, but can be suboptimal for professional-grade model training. Embeddings matrices are learned from text data using gradient descent and dimension-squeezing deep learning models. The embedding dimension is preserved throughout the entire language model. Language models generate text by concatenating one new token onto an existing token sequence. Language models are trained on a small number of epochs, because each epoch has a huge amount of data (batches). The embeddings vectors expanded to fill up more of the embeddings space, reflecting encoding of high-dimensional information in a lower-dimensional space. Interpretable semantic relationships (as measured through Sc) emerge even with a small amount of targeted training data, though the strength is weak.
    - **11_loss_function.ipynb:** Negative log likelihood is the main loss function used in language model training. Log softmax increases sensitivity at small probabilities, and gives a stronger penalty for errors. Most loss functions (and other mathematical bases of DL) are simple and well-defined. Difficulties arise from the explosive dimensionality of models.
+
+3. #### Large Language Models (Building)
+   Building a model from scratch is a fantastic way to learn how LLMs are created and trained. Please don’t ever build an LLM from scratch again (except for more education)
