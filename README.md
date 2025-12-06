@@ -38,3 +38,4 @@ A repo for the code of my LLM deep-dive
 
 3. #### Large Language Models (Building)
    Building a model from scratch is a fantastic way to learn how LLMs are created and trained. Please don’t ever build an LLM from scratch again (except for more education)
+   - **01_model1.ipynb:** Saying that language models “use only the final token" for next-token prediction is not accurate. They use all tokens; the final token contains the most information. Next-token selection is probabilistic. LLMs get complicated quickly; it’s good to learn about them one step at a time. 
