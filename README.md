@@ -57,3 +57,6 @@ A repo for the code of my LLM deep-dive
    - **17_parameter_counts.ipynb:** Biases are a tiny fraction of model parameters, which is why many deep learning models (especially models with layernorm) ignore them. MLP layers are dense and can have 2-3x as many parameters as attention layers. The number of parameters does not equate to importance in the model (cf layernorm). Examining and dissecting models are useful skills.
    - **18_weights_dist.ipynb:** Characteristics of model weights often have smooth transitions across layers, reflecting shifts in representations and calculations. In histograms, use counts for equal sample sizes, and use density (or other scaling) for unequal sample sizes.
    - **19_lobotomize_Q.ipynb:** Causal manipulations are easy to implement, although knowing what to manipulate is challenging and non-trivial. Model evaluations are tricky. There are quantitative evaluation methods, but many evaluations are based on qualitative inspection of generated text.
+
+4. #### Large Language Models (Pre-training)
+   Pretraining is a necessary first step for any LLM. A pretrained model understands the structure and patterns of written language, and can generate text. Pretraining to create a useful modern base model is prohibitively expensive for most individuals and companies. We should learn how pretraining works, but don’t try it at home ;)
